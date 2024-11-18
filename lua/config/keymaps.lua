@@ -10,7 +10,6 @@
 
 local wk = require('which-key')
 wk.add({
-
   { '<leader>cp', '<cmd>let @+ = expand("%:t")<cr>', desc = 'Copy filename' },
   {
     '<leader>cb',

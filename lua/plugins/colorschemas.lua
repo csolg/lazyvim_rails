@@ -4,11 +4,13 @@ return {
   { 'rebelot/kanagawa.nvim', lazy = true },
   { 'sainnhe/sonokai', lazy = true },
   { 'dracula/vim', lazy = true },
+  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000, lazy = true },
 
   {
     'LazyVim/LazyVim',
     opts = {
-      colorscheme = 'gruvbox',
+      -- colorscheme = 'gruvbox',
+      colorscheme = 'catppuccin',
     },
     -- opts = function()
     --   -- load the colorscheme here
