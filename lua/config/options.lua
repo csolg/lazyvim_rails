@@ -7,7 +7,6 @@ local opt = vim.opt
 opt.langmap =
   'ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz'
 opt.linebreak = true
-opt.wrap = true
 opt.iskeyword:append('-') -- consider string-string as whole word
 -- spelling
 -- If the name “cjk” is included, East Asian characters are excluded from spell checking
@@ -25,3 +24,16 @@ vim.g.lazyvim_ruby_formatter = 'rubocop'
 -- cmd('highlight! link FloatBorder CustomBorder') -- Link FloatBorder to CustomBorder
 -- cmd('highlight! link VertSplit CustomBorder') -- Link VertSplit to CustomBorder
 -- cmd('highlight! link PmenuBorder CustomBorder') -- Link PmenuBorder to CustomBorder
+--
+opt.guifont = 'SpaceMono Nerd Font:h18'
+
+opt.relativenumber = false
+
+-- wrapping
+opt.wrap = true
+opt.breakindent = true
+opt.showbreak = string.rep(' ', 3) -- Make it so that long lines wrap smartly
+opt.linebreak = true
+-- Remap for dealing with word wrap
+vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
+vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
