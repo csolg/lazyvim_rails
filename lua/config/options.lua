@@ -9,8 +9,17 @@ opt.langmap =
 opt.linebreak = true
 opt.iskeyword:append('-') -- consider string-string as whole word
 -- spelling
--- If the name “cjk” is included, East Asian characters are excluded from spell checking
-opt.spelllang = { 'en', 'ru', 'cjk' } -- Словари рус eng
+opt.spelllang = { 'en', 'ru' } -- Словари рус eng
+
+vim.opt.keymap = 'russian-jcukenwin'
+-- Startup language is English
+vim.opt.iminsert = 0
+-- Search language
+vim.opt.imsearch = 0
+-- Spellcheck
+vim.opt.spelllang = 'en_us,ru_ru,ru_yo'
+-- Switch keymap — not Ctrl-^ but Ctrl-L
+vim.keymap.set('i', '<C-L>', '<C-^>', { noremap = true, desc = 'Switch Input Language' })
 opt.spell = true
 opt.spellsuggest = { 'best', 9 }
 
