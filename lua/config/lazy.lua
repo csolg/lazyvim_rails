@@ -26,7 +26,7 @@ require('lazy').setup({
     -- version = false, -- always use the latest git commit
     version = '*', -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { 'tokyonight', 'habamax' } },
+  install = { colorscheme = { 'catppuccin' } },
   checker = { enabled = false }, -- automatically check for plugin updates
   performance = {
     rtp = {
@@ -57,10 +57,3 @@ end
 vim.api.nvim_create_autocmd('BufEnter', {
   callback = add_current_dir_to_localpath,
 })
-
--- Set colorscheme
--- vim.cmd([[colorscheme dracula]])
-vim.cmd([[colorscheme tokyonight]])
--- vim.cmd([[colorscheme kanagawa]])
--- vim.cmd('highlight FloatBorder guifg=#CCCCCC guibg=NONE') -- Customize FloatBorder
--- vim.cmd('highlight VertSplit guifg=#CCCCCC guibg=NONE') -- Customize VertSplit

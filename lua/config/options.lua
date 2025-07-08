@@ -34,7 +34,7 @@ vim.g.lazyvim_ruby_formatter = 'rubocop'
 -- cmd('highlight! link VertSplit CustomBorder') -- Link VertSplit to CustomBorder
 -- cmd('highlight! link PmenuBorder CustomBorder') -- Link PmenuBorder to CustomBorder
 --
-opt.guifont = 'SpaceMono Nerd Font:h18'
+opt.guifont = 'SpaceMono Nerd Font:h16'
 
 opt.relativenumber = false
 

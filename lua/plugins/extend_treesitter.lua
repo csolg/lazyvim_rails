@@ -43,6 +43,7 @@ return {
         'yaml',
         'embedded_template',
       },
+      ignore_install = { 'org' },
       incremental_selection = {
         enable = true,
         keymaps = {
